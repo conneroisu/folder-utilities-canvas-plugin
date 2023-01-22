@@ -2,6 +2,7 @@
 created: 2022-12-31T14:29:38-06:00
 updated: 2023-01-14T20:51:47-06:00
 ---
+# work with files and folders ￼in canvas mode
 
 Obsidian recently released a new core plugin called "canvas" which allows for the user to place Notes, Headers, and Media anywhere in a basically infinite, easily  location. Though a great update and addition I am sure will ignite numerous new plugins for the new mode, this plugin adds numerous canvas and folder commands and utilities to better take advantage of the canvas. 
 
