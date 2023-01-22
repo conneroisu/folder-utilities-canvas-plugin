@@ -1,27 +1,48 @@
 ---
 created: 2022-12-31T14:29:38-06:00
-updated: 2023-01-14T20:51:47-06:00
+updated: 2023-01-22T13:26:32-06:00
 ---
-# work with files and folders ￼in canvas mode
+# Work with files and folders in canvas mode!
 
 Obsidian recently released a new core plugin called "canvas" which allows for the user to place Notes, Headers, and Media anywhere in a basically infinite, easily  location. Though a great update and addition I am sure will ignite numerous new plugins for the new mode, this plugin adds numerous canvas and folder commands and utilities to better take advantage of the canvas. 
 
 Made with 🤍 by Conner Ohnesorge 
 
+# Implementations 
+**Unidirectional Folders**
+**Localizing Canvases**
+
+# Status 
+- [ ] This plugin is not completed yet 
+
+# Use
 ## Commands 
+
+### Unidirectional Folders
+| Command Name                                                 | Command id                     | Description                                                                                                                                                                                              |
+| ------------------------------------------------------------ | ------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Insert Unidirectional Folder into Canvas at selected element | insert-uni-folder-at-selection | This commands gets the currently selected canvas element's posiotion and removes said element, but then, inserts a group representing the folder selected in a modal into the removed elements position. |
+
+
 ### Localize Canvas Command
-Localize all files embededed the directory that the canvas you are presently viewing into the folder which contains the aformentioned active canvas. 
+| Command Name           | Command id             | Description                                                                                                                  |
+| ---------------------- | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| Localize Active Canvas | localize-active-canvas | This command localizes all files embedded into the canvas that you are presently viewing into the folder housing said canvas |
+
 ### Localize Canvas to Folder Command
-Make sure that all files present in the canvas are inside of a housing folder. 
+| Command Name                     | Command id                         | Description                                                                |
+| -------------------------------- | ---------------------------------- | -------------------------------------------------------------------------- |
+| Localize Active Canvas to Folder | localize-activate-canvas-to-folder | This commmand moves all files embedded in a canvas into a selected folder. |
+
 ### Insert Canvas Elements from Vault into the active canvas
-Insert the elements present in a canvas within your vault and insert the canvas into your active canvas. 
+| Command Name                      | Command id                 | Description                                                                                                                 |
+| --------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| Insert Canvas at Selected Element | insert-canvas-at-selection | This command inserts the elements in an external canvas into the active canvas through suggestions to the user with a modal |
 
 ### Link Group to Folder Using Modal 
-WIll rename the selected group with syntax to allow for the organization of files into folders within the core plugin of canvas. 
-
-### Convert Canvas To Folder and move Contents to it 
-
-### Convert Canvas to Folder and copy Contents to it 
+| Command Name         | Command id           | Description                                                                                                                                           |
+| -------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Link Group to Folder | link-group-to-folder | This command will rename and initialize a selected group with configurable syntax to allow for the organization of files into folders within a canvas |
 
 
 # Usage 
@@ -33,7 +54,6 @@ Currently unavaliable through community plugins inside of obsidian
 ## Manual Install 
 You can manually install folder utilities canvas plugin using github: 
 1. Go to the GitHub page for folder utilities canvas plugin: https://github.com/conneroisu/folder-utilities-canvas-plugin 
-
 2. Click the "Clone or Download" button and then select "Download ZIP" 
 3. Move the folder into your plugin inside of your `.obsidian` folder for your vault you want to add this plugin to 
 4. Inside of the folder you have just added to your plugins folder, you can run `npm i` and `npm run dev` to build it. 
